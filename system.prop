@@ -1,0 +1,94 @@
+#  VoLTE & WoWifi & RCS activation
+# debug options
+persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# data options
+persist.data.iwlan.enable=true
+persist.data.iwlan=1
+persist.data.iwlan.ipsec.ap=1
+
+# lg data options
+persist.lg.data.iwlan.enable=true
+persist.lg.data.iwlan.ipsec.ap=1
+persist.lg.data.iwlan=1
+
+# radio options
+persist.radio.volte.dan_support=true
+persist.radio.rat_on=combine
+persist.radio.data_ltd_sys_ind=1
+persist.radio.data_con_rprt=1
+persist.radio.calls.on.ims=1
+persist.radio.VT_ENABLE=1
+
+# vendor options
+persist.vendor.data.iwlan.enable=true
+persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.snapshot_enabled=1
+persist.vendor.radio.snapshot_timer=5
+
+# system options
+persist.sys.cust.lte_config=true
+
+# rcs options
+persist.rcs.supported=1
+
+# lge options
+ro.lge.radio_gpri=1
+ro.lge.amrwb_gpri=1
+
+#  Build.prop optimization
+# Tweak RAM
+ro.config.fha_enable=true
+ro.sys.fw.bg_apps_limit=32
+ro.config.dha_cached_max=16
+ro.config.dha_empty_max=42
+ro.config.dha_empty_init=32
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
+
+# Dalvik Virtual Machine tweaks
+dalvik.vm.checkjni=false
+dalvik.vm.dexopt-data-only=1
+dalvik.vm.heapstartsize=5m
+dalvik.vm.heapgrowthlimit=48m
+dalvik.vm.heapsize=64m
+dalvik.vm.verify-bytecode=false
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.lockprof.threshold=250
+dalvik.vm.dexopt-flags=m=v,o=y
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+dalvik.vm.jmiopts=forcecopy
+
+# Stream Videos Faster
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-rtsp=true
+media.stagefright.enable-record=true
+
+# Better Internet Speed
+net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+
+# Better Scrolling
+windowsmgr.max_events_per_sec=150
+ro.min_pointer_dur=8 
+ro.max.fling_velocity=12000
+ro.min.fling_velocity=8000
+persist.sys.scrollingcache=3
+debug.sf.hw=1
+
+# Better RAM management
+ro.HOME_APP_ADJ=1
+
+# Modify Logcat
+logcat.live=disable
