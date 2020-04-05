@@ -1,3 +1,9 @@
+*** v1.3 ***
+-3G tweaks
+-Support IPV4 / IPV6
+-Fix: WiFi Scan Interval 180s
+-Fix: Dalvik Virtual Machine
+
 *** v1.2 ***
 -Support Magisk 20.x
 -Rotation HomeScreen
