@@ -39,8 +39,8 @@ persist.rcs.supported=1
 ro.lge.radio_gpri=1
 ro.lge.amrwb_gpri=1
 
-#  Build.prop optimization
-# Tweak RAM
+# BUILD.PROP OPTIMIZATION
+# Optimization RAM
 ro.config.fha_enable=true
 ro.sys.fw.bg_apps_limit=32
 ro.config.dha_cached_max=16
@@ -51,7 +51,7 @@ ro.config.dha_th_rate=2.3
 ro.config.sdha_apps_bg_max=64
 ro.config.sdha_apps_bg_min=8
 
-# Dalvik Virtual Machine tweaks
+# Dalvik Virtual Machine
 dalvik.vm.checkjni=false
 dalvik.vm.dexopt-data-only=1
 dalvik.vm.heapstartsize=5m
@@ -79,6 +79,12 @@ net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
 net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
 net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
 
+# Google DNS
+net.rmnet0.dns1=8.8.8.8
+net.rmnet0.dns2=8.8.4.4
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+
 # Better Scrolling
 windowsmgr.max_events_per_sec=150
 ro.min_pointer_dur=8 
@@ -87,8 +93,54 @@ ro.min.fling_velocity=8000
 persist.sys.scrollingcache=3
 debug.sf.hw=1
 
+# Panorama Image Resolution
+ro.media.panorama.defres=10800x2442
+ro.media.panorama.frameres=3264x1840
+
+# Rotation for Homescreen
+lockscreen.rot_override=true
+
+# Modify MMS
+ro.gsm.2nd_data_retry_config=max/_retries=3, 3000, 3000, 3000
+
 # Better RAM management
 ro.HOME_APP_ADJ=1
 
 # Modify Logcat
 logcat.live=disable
+
+# Image Quality
+ro.media.enc.jpeg.quality=100
+
+# WiFi Scan Interval
+wifi.supplicant_scan_interval=120
+
+# Experience Gaming
+persist.sys.NV_FPSLIMIT=60
+persist.sys.NV_POWERMODE=1
+persist.sys.NV_PROFVER=15
+persist.sys.NV_STEREOCTRL=0
+persist.sys.NV_STEREOSEPCHG=0
+persist.sys.NV_STEREOSEP=20
+persist.sys.purgeable_assets=1
+debug.enabletr=true
+debug.qctwa.preservebuf=1
+dev.pm.dyn_samplingrate=1
+video.accelerate.hw=1
+ro.vold.umsdirtyratio=20
+debug.overlayui.enable=1
+debug.egl.hw=1
+ro.fb.mode=1
+hw3d.force=1
+persist.sys.ui.hw=1
+ro.sf.compbypass.enable=0
+debug.sf.hw=1
+debug.composition.type=c2d
+persist.sys.composition.type=c2d
+debug.performance.tuning=1
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.dec.aud.wma.enabled=1
+ro.media.dec.vid.wmv.enabled=1
+ro.media.cam.preview.fps=0
+ro.media.codec_priority_for_thumb=so
