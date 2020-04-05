@@ -1,6 +1,6 @@
 id=buildmanager
 name=Build Manager
-version=v1.0
+version=v1.1
 versionCode=7
 author=Fayz
-description=Optimization RAM, Dalvik Virtual Machine, Stream Videos Faster, Better Internet Speed, Better Scrolling, Better RAM management, Modify Logcat, VoLTE, VoWifi, RCS.
+description=Optimization: Dalvik Virtual Machine, Stream Videos, Internet Speed, Scrolling, RAM, Logcat, VoLTE, VoWifi, RCS.
