@@ -5,7 +5,7 @@
 * Redmi Note 7 Pro
 
 ## Compatible Android
-* Android Lollipop +
+* Android 10
 
 ## What does this module change ?
 * Optimization RAM
@@ -31,37 +31,37 @@
 
 ## Changelogs
 *** v1.4 bêta ***
-* add gcam api
+* Add GCam API
 
 *** v1.3 ***
-* 3g tweaks
-* support ipv4 / ipv6
-* fix: wifi scan interval 180s
-* fix: dalvik virtual machine
+* 3G tweaks
+* Support IPV4 / IPV6
+* Fix: WiFi Scan Interval 180s
+* Fix: Dalvik Virtual Machine
 
 *** v1.2 ***
-* support magisk 20.x
-* rotation homescreen
-* experience gaming
-* image quality
-* google dns
-* optimization ram
-* dalvik virtual machine
-* stream videos faster
-* better internet speed
-* google dns
-* panorama image resolution
-* rotation for homescreen
-* better scrolling
-* modify mms
-* better ram management
-* modify logcat
-* image quality
-* wifi scan interval
-* experience gaming
+* Support Magisk 20.x
+* Rotation HomeScreen
+* Experience Gaming
+* Image Quality
+* Google DNS
+* Optimization RAM
+* Dalvik Virtual Machine
+* Stream Videos Faster
+* Better Internet Speed
+* Google DNS
+* Panorama Image Resolution
+* Rotation for Homescreen
+* Better Scrolling
+* Modify MMS
+* Better RAM management
+* Modify Logcat
+* Image Quality
+* WiFi Scan Interval
+* Experience Gaming
 
 *** v1.1 ***
-* support magisk 19.x
+* Support Magisk 19.x
 
 *** v1.0 ***
-* initial
+* Initial
