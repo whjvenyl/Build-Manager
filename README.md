@@ -30,8 +30,13 @@
 * VoEnabler
 
 ## Changelogs
-*** v1.4 bêta ***
+*** v1.4 ***
 * Add GCam API
+* Enable Multi-Touch
+* Better Network Signals
+* Phone Ring Sooner
+* No Black Screen After Call
+* Boost Booting Speed
 
 *** v1.3 ***
 * 3G tweaks
