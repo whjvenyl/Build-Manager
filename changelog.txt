@@ -1,3 +1,7 @@
+*** v1.4 ***
+- Add GCam API
+-
+
 *** v1.3 ***
 -3G tweaks
 -Support IPV4 / IPV6
