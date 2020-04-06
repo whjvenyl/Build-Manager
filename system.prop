@@ -120,8 +120,27 @@ ro.media.panorama.frameres=3264x1840
 persist.telephony.support.ipv6=1
 persist.telephony.support.ipv4=1
 
+# Enable Multi-Touch
+ro.product.multi_touch_enabled=true
+ro.product.max_num_touch=2
+
+# Better Network Signals
+persist.cust.tel.eons=1
+ro.config.hw_fast_dormancy=1
+
+# Black Screen After Call
+ro.lge.proximity.delay=25
+mot.proximity.delay=25
+
+# The Phone Ring Sooner
+ro.telephony.call_ring.delay=0
+ring.delay=0
+
 # Rotation for Homescreen
 lockscreen.rot_override=true
+
+# Boost Booting Speed
+ro.config.hw_quickpoweron=true
 
 # Modify MMS
 ro.gsm.2nd_data_retry_config=max/_retries=3, 3000, 3000, 3000

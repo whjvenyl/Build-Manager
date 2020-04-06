@@ -1,6 +1,6 @@
 id=buildmanager
 name=Build Manager
-version=v1.3
+version=v1.4
 versionCode=7
 author=Fayz
-description=Dalvik VM, Stream Videos, Image Quality, Rotation Homescreen, IPV4/IPV6, Internet Speed, Scrolling, RAM, Logcat, MMS, DNS, VoLTE, VoWifi, RCS.
+description=Dalvik VM, Stream Videos, Image Quality, Rotation Homescreen, Internet Speed, Scrolling, IPV4/IPV6, GCam API, RAM, DNS, VoLTE, VoWifi, RCS, More...
