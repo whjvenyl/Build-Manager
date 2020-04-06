@@ -4,15 +4,28 @@
 ## Liste devices
 * Redmi Note 7 Pro
 
-## What does this module change?
+## Compatible Android
+* Android Lollipop +
+
+## What does this module change ?
 * Optimization RAM
 * Dalvik Virtual Machine
 * Stream Videos Faster
 * Better Internet Speed
+* 3G tweaks
+* Google DNS
 * Better Scrolling
+* Panorama Image Resolution
+* Support for ipv4 / ipv6
+* Rotation for Homescreen
+* Modify MMS 3s
 * Better RAM management
 * Modify Logcat
+* Image Quality
+* WiFi Scan Interval 180s
+* Experience Gaming
 
-## Changelog
-* 06-04-2020 (v1.1): Support Magisk v19x 
-* 05-04-2020 (v1.0): Initial commit.
+## Delete Mod because integrate: Build Manager
+* RAM management fixes by crok
+* VoEnabler
+
