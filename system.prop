@@ -107,6 +107,11 @@ ro.min.fling_velocity=8000
 persist.sys.scrollingcache=3
 debug.sf.hw=1
 
+# GCam API
+persist.vendor.camera.HAL3.enabled=1
+persist.camera.HAL3.enabled=1
+persist.camera.eis.enable=1
+
 # Panorama Image Resolution
 ro.media.panorama.defres=10800x2442
 ro.media.panorama.frameres=3264x1840
