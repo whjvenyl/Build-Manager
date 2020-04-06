@@ -30,6 +30,9 @@
 * VoEnabler
 
 ## Changelogs
+*** v1.5 ***
+* Fix Build Manager
+
 *** v1.4 ***
 * Add GCam API
 * Enable Multi-Touch
