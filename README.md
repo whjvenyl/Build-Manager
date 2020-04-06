@@ -30,6 +30,9 @@
 * VoEnabler
 
 ## Changelogs
+*** v1.6 alpha ***
+* testing
+
 *** v1.5 ***
 * Fix Build Manager
 
@@ -49,24 +52,6 @@
 
 *** v1.2 ***
 * Support Magisk 20.x
-* Rotation HomeScreen
-* Experience Gaming
-* Image Quality
-* Google DNS
-* Optimization RAM
-* Dalvik Virtual Machine
-* Stream Videos Faster
-* Better Internet Speed
-* Google DNS
-* Panorama Image Resolution
-* Rotation for Homescreen
-* Better Scrolling
-* Modify MMS
-* Better RAM management
-* Modify Logcat
-* Image Quality
-* WiFi Scan Interval
-* Experience Gaming
 
 *** v1.1 ***
 * Support Magisk 19.x
