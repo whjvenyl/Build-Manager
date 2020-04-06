@@ -18,51 +18,50 @@
 * Panorama Image Resolution
 * Support for ipv4 / ipv6
 * Rotation for Homescreen
-* Modify MMS 3s
+* WiFi Scan Interval 180s
 * Better RAM management
+* Experience Gaming
 * Modify Logcat
 * Image Quality
-* WiFi Scan Interval 180s
-* Experience Gaming
+* Modify MMS 
 
 ## Delete Mod because integrate: Build Manager
 * RAM management fixes by crok
 * VoEnabler
 
-## Changlogs
-* Redmi Note 7 Pro
+## Changelogs
 *** v1.4 bêta ***
--Add GCam API
+* Add GCam API
 
 *** v1.3 ***
--3G tweaks
--Support IPV4 / IPV6
--Fix: WiFi Scan Interval 180s
--Fix: Dalvik Virtual Machine
+* 3G tweaks
+* Support IPV4 / IPV6
+* Fix: WiFi Scan Interval 180s
+* Fix: Dalvik Virtual Machine
 
 *** v1.2 ***
--Support Magisk 20.x
--Rotation HomeScreen
--Experience Gaming
--Image Quality
--Google DNS
--Optimization RAM
--Dalvik Virtual Machine
--Stream Videos Faster
--Better Internet Speed
--Google DNS
--Panorama Image Resolution
--Rotation for Homescreen
--Better Scrolling
--Modify MMS
--Better RAM management
--Modify Logcat
--Image Quality
--WiFi Scan Interval
--Experience Gaming
+* Support Magisk 20.x
+* Rotation HomeScreen
+* Experience Gaming
+* Image Quality
+* Google DNS
+* Optimization RAM
+* Dalvik Virtual Machine
+* Stream Videos Faster
+* Better Internet Speed
+* Google DNS
+* Panorama Image Resolution
+* Rotation for Homescreen
+* Better Scrolling
+* Modify MMS
+* Better RAM management
+* Modify Logcat
+* Image Quality
+* WiFi Scan Interval
+* Experience Gaming
 
 *** v1.1 ***
--Support Magisk 19.x
+* Support Magisk 19.x
 
 *** v1.0 ***
--Initial
+* Initial
