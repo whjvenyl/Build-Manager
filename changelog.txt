@@ -3,6 +3,7 @@
 * Add: Boost Booting Speed
 * Add: Phone rings immediately
 * Add: Disables Built In Error Reporting
+* Fix: Lags Build Manager
 * Fix: Build Manager script
 * Fix: Black Screen After Call
 * Fix: Improves Audio / Video Quality
