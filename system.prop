@@ -138,9 +138,13 @@ ro.config.hw_fast_dormancy=1
 
 # Black Screen After Call
 ro.lge.proximity.delay=25
-mot.proximity.delay=25
+mot.proximity.delay=0
 
-# The Phone Ring Sooner
+# Improve Voice Call Clarity
+ro.ril.enable.amr.wideband=1
+ro.config.vc_call_steps=20
+
+# Phone rings immediately
 ro.telephony.call_ring.delay=0
 ring.delay=0
 

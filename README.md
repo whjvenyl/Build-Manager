@@ -30,8 +30,11 @@
 * VoEnabler
 
 ## Changelogs
-*** v1.6 alpha ***
-* testing
+*** v1.6.x alpha ***
+* Fix: Build Manager
+* Add: Voice Call Clarity
+* Add: Phone rings immediately
+* Fix: Black Screen After Call
 
 *** v1.5 ***
 * Fix Build Manager

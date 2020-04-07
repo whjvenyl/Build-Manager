@@ -1,5 +1,6 @@
-*** v1.6 alpha ***
-* testing
+*** v1.6.x alpha ***
+* Fix module
+* config.sh
 
 *** v1.5 ***
 * Fix Build Manager
