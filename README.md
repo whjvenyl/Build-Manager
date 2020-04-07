@@ -12,29 +12,25 @@
 * Dalvik Virtual Machine
 * Stream Videos Faster
 * Better Internet Speed
-* 3G tweaks
-* Google DNS
-* Better Scrolling
 * Panorama Image Resolution
 * Support for ipv4 / ipv6
 * Rotation for Homescreen
 * WiFi Scan Interval 180s
 * Better RAM management
 * Experience Gaming
-* Modify Logcat
-* Image Quality
-* Modify MMS 
+* More...
 
 ## Delete Mod because integrate: Build Manager
 * RAM management fixes by crok
 * VoEnabler
 
 ## Changelogs
-*** v1.6.x alpha ***
+*** v1.6.x alpha***
 * Add: Voice Call Clarity
 * Add: Boost Booting Speed
 * Add: Phone rings immediately
 * Add: Disables Built In Error Reporting
+* Fix: Lags Build Manager
 * Fix: Build Manager script
 * Fix: Black Screen After Call
 * Fix: Improves Audio / Video Quality
