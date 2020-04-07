@@ -4,8 +4,13 @@
 ## Liste devices
 * Redmi Note 7 Pro
 
-## Compatible Android
+## Tested on Miui
 * Android 10
+* Android 9
+
+## Not tested on AOSP
+* 
+* 
 
 ## What does this module change ?
 * Optimization RAM
@@ -25,7 +30,7 @@
 * VoEnabler
 
 ## Changelogs
-*** v1.6.x alpha***
+*** v1.6***
 * Add: Voice Call Clarity
 * Add: Boost Booting Speed
 * Add: Phone rings immediately
