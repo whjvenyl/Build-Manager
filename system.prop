@@ -1,21 +1,31 @@
-#  VoLTE & WoWifi & RCS activation
+# -------------------------------
+# VoLTE & WoWifi & RCS activation
+# -------------------------------
+# -------------------------------
 # debug options
+# -------------------------------
 persist.dbg.ims_volte_enable=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# -------------------------------
 # data options
+# -------------------------------
 persist.data.iwlan.enable=true
 persist.data.iwlan=1
 persist.data.iwlan.ipsec.ap=1
 
+# -------------------------------
 # lg data options
+# -------------------------------
 persist.lg.data.iwlan.enable=true
 persist.lg.data.iwlan.ipsec.ap=1
 persist.lg.data.iwlan=1
 
+# -------------------------------
 # radio options
+# -------------------------------
 persist.radio.volte.dan_support=true
 persist.radio.rat_on=combine
 persist.radio.data_ltd_sys_ind=1
@@ -23,24 +33,37 @@ persist.radio.data_con_rprt=1
 persist.radio.calls.on.ims=1
 persist.radio.VT_ENABLE=1
 
+# -------------------------------
 # vendor options
+# -------------------------------
 persist.vendor.data.iwlan.enable=true
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
 
+# -------------------------------
 # system options
+# -------------------------------
 persist.sys.cust.lte_config=true
 
+# -------------------------------
 # rcs options
+# -------------------------------
 persist.rcs.supported=1
 
+# -------------------------------
 # lge options
+# -------------------------------
 ro.lge.radio_gpri=1
 ro.lge.amrwb_gpri=1
+# -------------------------------
 
+# -------------------------------
 # BUILD.PROP OPTIMIZATION
+# -------------------------------
+# -------------------------------
 # Optimization RAM
+# -------------------------------
 ro.config.fha_enable=true
 ro.sys.fw.bg_apps_limit=32
 ro.config.dha_cached_max=16
@@ -51,7 +74,9 @@ ro.config.dha_th_rate=2.3
 ro.config.sdha_apps_bg_max=64
 ro.config.sdha_apps_bg_min=8
 
+# -------------------------------
 # Dalvik Virtual Machine
+# -------------------------------
 dalvik.vm.checkjni=false
 dalvik.vm.dexopt-data-only=1
 dalvik.vm.heapstartsize=5m
@@ -66,14 +91,18 @@ dalvik.vm.dexopt-flags=m=v,o=y
 dalvik.vm.stack-trace-file=/data/anr/traces.txt
 dalvik.vm.jmiopts=forcecopy
 
+# -------------------------------
 # Better Internet Speed
+# -------------------------------
 net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
 net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
 net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
 net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
 net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
 
+# -------------------------------
 # 3G tweaks
+# -------------------------------
 ro.ril.hep=0
 ro.ril.hsxpa=2
 ro.ril.gprsclass=12
@@ -85,7 +114,9 @@ ro.ril.htcmaskw1.bitmask=4294967295
 ro.ril.htcmaskw1=14449
 ro.ril.hsupa.category=6
 
+# -------------------------------
 # DNS IPV4/IPV6
+# -------------------------------
 net.eth0.dns1=1.1.1.1
 net.eth0.dns2=1.0.0.1
 net.dns1=1.1.1.1
@@ -99,7 +130,9 @@ net.rmnet1.dns2=1.0.0.1
 net.pdpbr1.dns1=1.1.1.1
 net.pdpbr1.dns2=1.0.0.1
 
+# -------------------------------
 # Improves Audio & Video Recording Quality
+# -------------------------------
 ro.media.enc.jpeg.quality=100
 ro.media.dec.jpeg.memcap=8000000
 ro.media.enc.hprof.vid.bps=8000000
@@ -113,7 +146,9 @@ ro.media.capture.maxres=8m
 ro.camcorder.videoModes=true
 ro.media.enc.hprof.vid.fps=65
 
+# -------------------------------
 # Faster Streaming Videos
+# -------------------------------
 media.stagefright.enable-player=true
 media.stagefright.enable-meta=true
 media.stagefright.enable-scan=true
@@ -121,7 +156,9 @@ media.stagefright.enable-http=true
 media.stagefright.enable-rtsp=true
 media.stagefright.enable-record=false
 
+# -------------------------------
 # Video Acceleration & HW Debugging
+# -------------------------------
 persist.sys.composition.type=c2d
 debug.performance.tuning=1
 debug.composition.type=c2d
@@ -129,65 +166,112 @@ video.accelerate.hw=1
 debug.sf.hw=1
 debug.egl.hw=1
 
+# -------------------------------
 # Better Scrolling
+# -------------------------------
 windowsmgr.max_events_per_sec=150
 ro.min_pointer_dur=8 
 ro.max.fling_velocity=12000
 ro.min.fling_velocity=8000
 persist.sys.scrollingcache=3
 
+# -------------------------------
+# locales FR
+# -------------------------------
+ro.product.locale.language=FR
+ro.product.locale.region=FR
+ro.build.target_country=FR
+ro.com.android.dateformat=dd-MM-yyyy
+persist.sys.timezone=Europe/Paris
+
+# -------------------------------
 # GCam API
+# -------------------------------
 persist.vendor.camera.HAL3.enabled=1
 persist.camera.HAL3.enabled=1
 persist.camera.eis.enable=1
 
+# -------------------------------
 # Support for ipv4 / ipv6
+# -------------------------------
 persist.telephony.support.ipv6=1
 persist.telephony.support.ipv4=1
 
+# -------------------------------
 # Enable Multi-Touch
+# -------------------------------
 ro.product.multi_touch_enabled=true
 ro.product.max_num_touch=2
 
+# -------------------------------
 # Better Network Signals
+# -------------------------------
 persist.cust.tel.eons=1
 ro.config.hw_fast_dormancy=1
 
+# -------------------------------
 # Disables Built In Error Reporting
+# -------------------------------
 profiler.force_disable_err_rpt=1
 profiler.force_disable_ulog=1
 
+# -------------------------------
 # Black Screen After Call
-ro.lge.proximity.delay=25
+# -------------------------------
 mot.proximity.delay=0
+ro.lge.proximity.delay=25
 
+# -------------------------------
 # Improve Voice Call Clarity
+# -------------------------------
 ro.ril.enable.amr.wideband=1
-ro.config.vc_call_steps=20
+ro.config.vc_call_steps=30
 
+# -------------------------------
 # Phone rings immediately
+# -------------------------------
 ro.telephony.call_ring.delay=0
 ring.delay=0
 
+# -------------------------------
 # Rotation for Homescreen
+# -------------------------------
 lockscreen.rot_override=true
+log.tag.launcher_force_rotate=VERBOSE
 
+# -------------------------------
+# Force 270-degree rotation in all apps
+# -------------------------------
+windowsmgr.support_rotation_270=true
+
+# -------------------------------
 # Boost Booting Speed
+# -------------------------------
 ro.config.hw_quickpoweron=true
 
+# -------------------------------
 # Modify MMS Timer Set To 2 sec
+# -------------------------------
 ro.gsm.2nd_data_retry_config=max/_retries=3, 2000, 2000, 2000
 
+# -------------------------------
 # Better RAM management
+# -------------------------------
 ro.HOME_APP_ADJ=1
 
+# -------------------------------
 # Modify Logcat
+# -------------------------------
 logcat.live=disable
 
+# -------------------------------
 # WiFi Scan Interval
+# -------------------------------
 wifi.supplicant_scan_interval=180
 
+# -------------------------------
 # Experience Gaming
+# -------------------------------
 persist.sys.NV_FPSLIMIT=60
 persist.sys.NV_POWERMODE=1
 persist.sys.NV_PROFVER=15
@@ -204,4 +288,3 @@ debug.enabletr=true
 persist.sys.ui.hw=1
 ro.fb.mode=1
 hw3d.force=1
-
