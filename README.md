@@ -31,10 +31,16 @@
 
 ## Changelogs
 *** v1.6.x alpha ***
-* Fix: Build Manager
 * Add: Voice Call Clarity
+* Add: Boost Booting Speed
 * Add: Phone rings immediately
+* Add: Disables Built In Error Reporting
+* Fix: Build Manager script
 * Fix: Black Screen After Call
+* Fix: Improves Audio / Video Quality
+* Fix: Faster Streaming Videos
+* Fix: Video Acceleration / HW Debugging
+* Fix: Modify MMS Timer Set To 2 sec
 
 *** v1.5 ***
 * Fix Build Manager
