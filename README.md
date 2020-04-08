@@ -10,7 +10,6 @@
 
 ## Not tested on AOSP
 * 
-* 
 
 ## What does this module change ?
 * Optimization RAM
@@ -30,6 +29,25 @@
 * VoEnabler
 
 ## Changelogs
+*** v1.7.x alpha***
+* Fix: Build Manager
+* Add: Network parameters
+* Add: Doze parameters
+* Add: Soc Qualcomm
+* Add: Improves FPS
+* Add: Security Knox
+* Add: Swap / Zram
+* Fix: Better Internet Speed
+* Fix: Dalvik Virtual Machine
+* Fix: Disables In Error Reporting
+* Fix: Optimization RAM
+* Fix: 3G & 4G tweaks
+* Fix: Improves Audio & Video Codecs
+* Fix: Faster Streaming Videos
+* Fix: Improves Quality Camera
+* Fix: Video Acceleration & HW Debugging
+* Fix: WiFi Scan Interval & Canal
+
 *** v1.6***
 * Add: Voice Call Clarity
 * Add: Boost Booting Speed

@@ -1,7 +1,7 @@
 id=BuilManager
 name=Build Manager
-version=v1.6
+version=v1.7.x alpha
 versionCode=7
 author=Fayz
-description=Build Manager optimize: Dalvik VM, Stream Videos, Image Quality, Rotation Homescreen, Internet Speed, Scrolling, IPV4/IPV6, GCam API, More...
+description=Dalvik VM, Stream Videos, Image Quality, DNS system-lessy, Rotation Homescreen, Internet Speed, Scrolling, IPV4/IPV6, GCam API, More...
 donate=paypal.me/pmspr4100

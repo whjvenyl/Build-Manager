@@ -1,62 +1,30 @@
 # -------------------------------
 # VoLTE & WoWifi & RCS activation
 # -------------------------------
-# -------------------------------
-# debug options
-# -------------------------------
 persist.dbg.ims_volte_enable=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
-
-# -------------------------------
-# data options
-# -------------------------------
 persist.data.iwlan.enable=true
 persist.data.iwlan=1
 persist.data.iwlan.ipsec.ap=1
-
-# -------------------------------
-# lg data options
-# -------------------------------
 persist.lg.data.iwlan.enable=true
 persist.lg.data.iwlan.ipsec.ap=1
 persist.lg.data.iwlan=1
-
-# -------------------------------
-# radio options
-# -------------------------------
 persist.radio.volte.dan_support=true
 persist.radio.rat_on=combine
 persist.radio.data_ltd_sys_ind=1
 persist.radio.data_con_rprt=1
 persist.radio.calls.on.ims=1
 persist.radio.VT_ENABLE=1
-
-# -------------------------------
-# vendor options
-# -------------------------------
 persist.vendor.data.iwlan.enable=true
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
-
-# -------------------------------
-# system options
-# -------------------------------
 persist.sys.cust.lte_config=true
-
-# -------------------------------
-# rcs options
-# -------------------------------
 persist.rcs.supported=1
-
-# -------------------------------
-# lge options
-# -------------------------------
 ro.lge.radio_gpri=1
 ro.lge.amrwb_gpri=1
-# -------------------------------
 
 # -------------------------------
 # BUILD.PROP OPTIMIZATION
@@ -65,7 +33,7 @@ ro.lge.amrwb_gpri=1
 # Optimization RAM
 # -------------------------------
 ro.config.fha_enable=true
-ro.sys.fw.bg_apps_limit=32
+ro.sys.fw.bg_apps_limit=48
 ro.config.dha_cached_max=16
 ro.config.dha_empty_max=42
 ro.config.dha_empty_init=32
@@ -77,42 +45,162 @@ ro.config.sdha_apps_bg_min=8
 # -------------------------------
 # Dalvik Virtual Machine
 # -------------------------------
-dalvik.vm.checkjni=false
+dalvik.vm.debug.alloc=0
 dalvik.vm.dexopt-data-only=1
-dalvik.vm.heapstartsize=5m
-dalvik.vm.heapgrowthlimit=48m
-dalvik.vm.heapsize=64m
-dalvik.vm.heapminfree=512k
-dalvik.vm.heapmaxfree=8m
-dalvik.vm.verify-bytecode=false
-dalvik.vm.execution-mode=int:jit
 dalvik.vm.lockprof.threshold=250
-dalvik.vm.dexopt-flags=m=v,o=y
-dalvik.vm.stack-trace-file=/data/anr/traces.txt
+dalvik.vm.verify-bytecode=false
+dalvik.vm.usejit=true
+dalvik.vm.usejitprofiles=true
+dalvik.vm.checkjni=false
+dalvik.vm.dex2oat-swap=false
+dalvik.vm.check-dex-sum=false
+dalvik.vm.jitinitialsize=256k
+dalvik.vm.jitmaxsize=384m
+dalvik.vm.jitthreshold=10000
+dalvik.vm.jitprithreadweight=500
+dalvik.vm.jittransitionweight=1000
+dalvik.vm.heapstartsize=16k
+dalvik.vm.heapsize=384m
+dalvik.vm.heapgrowthlimit=384m
+dalvik.vm.heapminfree=2m
+dalvik.vm.heapmaxfree=384m
+dalvik.vm.heaputilization=0.75
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.dex2oat-Xmx=384m
+dalvik.vm.image-dex2oat-Xmx=384m
+dalvik.vm.dexopt-flags=v=a,o=v,m=y,u=n
+dalvik.vm.execution-mode=int:jit
 dalvik.vm.jmiopts=forcecopy
+dalvik.vm.boot-dex2oat-threads=4
+dalvik.vm.dex2oat-threads=4
+ro.sys.fw.dex2oat_thread_count=4
+dalvik.vm.image-dex2oat-flags=speed-profile
+dalvik.vm.image-dex2oat-filter=speed-profile
+dalvik.vm.dex2oat-filter=speed-profile
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+
+# --------------------------------------------------
+# Network parameters
+# --------------------------------------------------
+persist.data_netmgrd_mtu=1482
+persist.data_netmgrd_nint=8
+net.core.somaxconn=1024
+net.core.netdev_max_backlog=2500
+net.core.optmem_max=6291456
+net.core.rmem_default=6291456
+net.core.rmem_max=6291456
+net.core.wmem_default=1572864
+net.core.wmem_max=1572864
+net.ipv4.ip_dynaddr=0
+net.ipv4.ip_no_pmtu_disc=0
+net.ipv4.ip_local_port_range=1024 65535
+net.ipv4.tcp_congestion_control=cubic
+net.ipv4.tcp_max_orphans=40960
+net.ipv4.tcp_ecn=0
+net.ipv4.tcp_fack=1
+net.ipv4.tcp_moderate_rcvbuf=1
+net.ipv4.tcp_rfc1337=1
+net.ipv4.tcp_sack=1
+net.ipv4.tcp_timestamps=1
+net.ipv4.tcp_window_scaling=1
+net.ipv4.tcp_no_metrics_save=1
+net.ipv4.tcp_max_syn_backlog=1024
+net.ipv4.tcp_mtu_probing=1
+net.ipv4.tcp_synack_retries=2
+net.ipv4.tcp_fin_timeout=15
+net.ipv4.tcp_tw_reuse=1
+net.ipv4.tcp_tw_recycle=1
+net.ipv4.tcp_mem=4096 39000 187000
+net.ipv4.udp_mem=4096 39000 187000
+net.ipv4.tcp_rmem=4096 39000 187000
+net.ipv4.tcp_wmem=4096 39000 187000
+net.ipv4.udp_rmem_min=8192
+net.ipv4.udp_wmem_min=8192
+net.ipv4.tcp_keepalive_intvl=30
+net.ipv4.tcp_keepalive_probes=5
+net.ipv4.tcp_keepalive_time=1800
+net.ipv4.tcp_max_tw_buckets=1440000
 
 # -------------------------------
 # Better Internet Speed
 # -------------------------------
-net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
-net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
-net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
-net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
-net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.hspa=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.hspap=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.hspda=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.hsupa=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.evdo=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.hsdpa=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.evdo_b=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.lte=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
 
 # -------------------------------
-# 3G tweaks
+# Disables Built In Error Reporting
 # -------------------------------
-ro.ril.hep=0
+debugtool.anrhistory=0
+logcat.live=disable
+persist.android.strictmode=0
+debug.atrace.tags.enableflags=0
+profiler.debugmonitor=false
+profiler.force_disable_ulog=true
+profiler.force_disable_err_rpt=true
+profiler.force_disable_ulog=1
+profiler.force_disable_err_rpt=1
+profiler.hung.dumpdobugreport=false
+persist.sys.purgeable_assets=1
+profiler.launch=false
+ro.debuggable=1
+ro.kernel.checkjni=0
+ro.kernel.android.checkjni=0
+ro.config.htc.nocheckin=1
+ro.config.nocheckin=1
+kernel.panic_on_oops=0
+kernel.panic=0
+
+# -------------------------------
+# 3G & 4G tweaks
+# -------------------------------
+ro.ril.hep=1
 ro.ril.hsxpa=2
 ro.ril.gprsclass=12
+ro.ril.hsdpa.category=28
+ro.ril.hsupa.category=9
 ro.ril.enable.dtm=1
-ro.ril.hsdpa.category=8
+ro.ril.enable.a52=1
 ro.ril.enable.a53=1
 ro.ril.enable.3g.prefix=1
 ro.ril.htcmaskw1.bitmask=4294967295
 ro.ril.htcmaskw1=14449
-ro.ril.hsupa.category=6
+persist.cust.tel.eons=1
+ro.ril.set.mtu1472=1
+ro.fast.dormancy=1
+ro.config.hw_fast_dormancy=1
+ro.ril.fast.dormancy.rule=1
+
+# -------------------------------
+# Doze parameters
+# -------------------------------
+pm.sleep_mode=1
+doze.display.supported=true
+doze.pulse.notifications=true
+doze.use.accelerometer=1
+doze.pickup.vibration.threshold=2000
+doze.pulse.brightness=5
+doze.pulse.delay.in=200
+doze.pulse.duration.in=1000
+doze.pulse.duration.out=1000
+doze.pulse.duration.visible=3000
+doze.pulse.proxcheck=1
+doze.pulse.schedule=1s,10s,30s,60s,120s
+doze.pulse.schedule.resets=3
+doze.pulse.sigmotion=1
+doze.shake.acc.threshold=10
+doze.vibrate.sigmotion=1
+debug.doze.component=1
 
 # -------------------------------
 # DNS IPV4/IPV6
@@ -131,37 +219,54 @@ net.pdpbr1.dns1=1.1.1.1
 net.pdpbr1.dns2=1.0.0.1
 
 # -------------------------------
-# Improves Audio & Video Recording Quality
+# Improves Audio & Video Codecs
 # -------------------------------
-ro.media.enc.jpeg.quality=100
-ro.media.dec.jpeg.memcap=8000000
-ro.media.enc.hprof.vid.bps=8000000
-ro.media.panorama.defres=10800x2442
-ro.media.panorama.frameres=3264x1840
 ro.media.codec_priority_for_thumb=so
+ro.media.capture.maxres=8m
+ro.media.dec.aud.flac.enabled=1
+ro.media.dec.vid.H.264.enabled=1
+ro.media.dec.aud.mp3.enabled=1
+ro.media.dec.vid.mp4.enabled=1
 ro.media.dec.aud.wma.enabled=1
 ro.media.dec.vid.wmv.enabled=1
-ro.media.cam.preview.fps=0
-ro.media.capture.maxres=8m
-ro.camcorder.videoModes=true
-ro.media.enc.hprof.vid.fps=65
+ro.media.enc.aud.flac.enabled=1
+ro.media.enc.vid.H.264.enabled=1
+ro.media.enc.aud.mp3.enabled=1
+ro.media.enc.vid.mp4.enabled=1
+ro.media.enc.aud.wma.enabled=1
+ro.media.enc.vid.wmv.enabled=1
 
 # -------------------------------
 # Faster Streaming Videos
 # -------------------------------
-media.stagefright.enable-player=true
-media.stagefright.enable-meta=true
-media.stagefright.enable-scan=true
+media.stagefright.enable-aac=true
 media.stagefright.enable-http=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-record=true
 media.stagefright.enable-rtsp=true
-media.stagefright.enable-record=false
+media.stagefright.enable-scan=true
 
-# -------------------------------
+# --------------------------------
+# Improves Quality Camera
+# --------------------------------
+ro.media.cam.preview.fps=0
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.enc.hprof.vid.fps=65
+ro.media.enc.jpeg.quality=100
+ro.media.dec.jpeg.memcap=8000000
+ro.media.panorama.defres=10800x2442
+ro.media.panorama.frameres=3264x1840
+
+# ---------------------------------
 # Video Acceleration & HW Debugging
-# -------------------------------
-persist.sys.composition.type=c2d
-debug.performance.tuning=1
+# ---------------------------------
 debug.composition.type=c2d
+debug.composition.type=gpu
+persist.sys.composition.type=c2d
+persist.sys.composition.type=gpu
+debug.performance.tuning=1
 video.accelerate.hw=1
 debug.sf.hw=1
 debug.egl.hw=1
@@ -170,19 +275,55 @@ debug.egl.hw=1
 # Better Scrolling
 # -------------------------------
 windowsmgr.max_events_per_sec=150
-ro.min_pointer_dur=8 
 ro.max.fling_velocity=12000
 ro.min.fling_velocity=8000
+ro.min_pointer_dur=8 
+touch.pressure.scale=0.1
 persist.sys.scrollingcache=3
 
 # -------------------------------
-# locales FR
+# Soc Qualcomm
 # -------------------------------
-ro.product.locale.language=FR
-ro.product.locale.region=FR
-ro.build.target_country=FR
-ro.com.android.dateformat=dd-MM-yyyy
-persist.sys.timezone=Europe/Paris
+com.qc.hardware=1
+debug.qc.hardware=true
+debug.qctwa.preservebuf=1
+debug.qctwa.statusbar=1
+persist.service.pcsync.enable=0
+persist.service.lgospd.enable=0
+ro.product.gpu.driver=1
+
+# -------------------------------
+# Improves FPS
+# -------------------------------
+debug.sf.showupdates=0
+debug.sf.showcpu=0
+debug.sf.showbackground=0
+debug.sf.showfps=0
+
+# -------------------------------
+# Power
+# -------------------------------
+ro.ril.disable.power.collapse=0
+ro.ril.power_collapse=1
+power_supply.wakeup=enable
+ro.config.hw_power_saving=1
+power.saving.mode=1
+
+# -------------------------------
+# Security Knox
+# -------------------------------
+ro.config.tima=0
+ro.securestorage.knox=false
+wlan.wfd.hdcp=disable
+security.mdpp=None
+security.mdpp.result=None
+
+# --------------------------------
+# Swap / Zram
+# --------------------------------
+ro.config.zram=0
+ro.config.zram.support=0
+vm.swappiness=0
 
 # -------------------------------
 # GCam API
@@ -190,6 +331,13 @@ persist.sys.timezone=Europe/Paris
 persist.vendor.camera.HAL3.enabled=1
 persist.camera.HAL3.enabled=1
 persist.camera.eis.enable=1
+
+# -------------------------------
+# Rotation for Homescreen
+# -------------------------------
+lockscreen.rot_override=true
+log.tag.launcher_force_rotate=VERBOSE
+windowsmgr.support_rotation_270=true
 
 # -------------------------------
 # Support for ipv4 / ipv6
@@ -202,18 +350,6 @@ persist.telephony.support.ipv4=1
 # -------------------------------
 ro.product.multi_touch_enabled=true
 ro.product.max_num_touch=2
-
-# -------------------------------
-# Better Network Signals
-# -------------------------------
-persist.cust.tel.eons=1
-ro.config.hw_fast_dormancy=1
-
-# -------------------------------
-# Disables Built In Error Reporting
-# -------------------------------
-profiler.force_disable_err_rpt=1
-profiler.force_disable_ulog=1
 
 # -------------------------------
 # Black Screen After Call
@@ -234,25 +370,10 @@ ro.telephony.call_ring.delay=0
 ring.delay=0
 
 # -------------------------------
-# Rotation for Homescreen
-# -------------------------------
-lockscreen.rot_override=true
-log.tag.launcher_force_rotate=VERBOSE
-
-# -------------------------------
-# Force 270-degree rotation in all apps
-# -------------------------------
-windowsmgr.support_rotation_270=true
-
-# -------------------------------
-# Boost Booting Speed
-# -------------------------------
-ro.config.hw_quickpoweron=true
-
-# -------------------------------
 # Modify MMS Timer Set To 2 sec
 # -------------------------------
 ro.gsm.2nd_data_retry_config=max/_retries=3, 2000, 2000, 2000
+ro.telephony.sms_segment_size=160
 
 # -------------------------------
 # Better RAM management
@@ -260,13 +381,9 @@ ro.gsm.2nd_data_retry_config=max/_retries=3, 2000, 2000, 2000
 ro.HOME_APP_ADJ=1
 
 # -------------------------------
-# Modify Logcat
-# -------------------------------
-logcat.live=disable
-
-# -------------------------------
 # WiFi Scan Interval
 # -------------------------------
+ro.wifi.channels=13
 wifi.supplicant_scan_interval=180
 
 # -------------------------------
@@ -278,13 +395,4 @@ persist.sys.NV_PROFVER=15
 persist.sys.NV_STEREOCTRL=0
 persist.sys.NV_STEREOSEPCHG=0
 persist.sys.NV_STEREOSEP=20
-persist.sys.purgeable_assets=1
-debug.qctwa.preservebuf=1
-dev.pm.dyn_samplingrate=1
-ro.vold.umsdirtyratio=20
-debug.overlayui.enable=1
-ro.sf.compbypass.enable=0
-debug.enabletr=true
-persist.sys.ui.hw=1
-ro.fb.mode=1
-hw3d.force=1
+
